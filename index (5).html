@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+
+<style>
+    
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(30, 30, 33);
+    /* background-image: url('cloth.jpeg'); */
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    
+    
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    overflow: hidden;
+    height: 100px;
+    padding: 1px 20px;
+    color: #fff;
+
+
+}
+img{
+    height: 80px;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+}
+.logo h2{
+    padding: 15px ;
+    font-family: 'Inspiration', cursive;
+    color: black;
+}
+
+
+
+.links a{
+    padding-right: 18px;
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #000;
+    overflow: hidden;
+    font-size: 1.3rem;
+    
+}
+main{
+    width: 70%;
+    background-color: gainsboro;
+    margin: 100px auto;
+    padding: 0 50px;
+    text-align: justify;
+}
+h3{
+    margin: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:rgb(25, 22, 16);
+    font-size: 2rem;
+
+}
+
+h4{
+    margin-top: 15px;
+    padding-left: 12px;
+}
+
+p{
+    padding: 12px;
+}
+
+.images{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    background-color: #000;
+}
+
+.about{
+    background-color: blanchedalmond;
+
+}
+ul{
+    list-style: square ;
+}
+
+ul li{
+    padding: 50px 0;
+    font-size: 1.3rem;
+}
+ul li::marker{
+    font-size: 2rem;
+    color: red;
+}
+
+.mission1,.mission2,.mission3,.mission4{
+    background-color:blanchedalmond;
+    border-radius: 15px;
+    margin: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    overflow: hidden;
+    padding-left: 30px;
+}
+
+form{
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 2px 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    background-color: rgb(229, 227, 208);
+    font-weight: 900;
+    font-size: 1.4rem;
+}
+
+input,select{
+    width: 100%;
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: 0;
+    padding: 8px;
+}
+
+fieldset input{
+    width: fit-content;
+}
+
+fieldset{
+    padding: 10px;
+    line-height: 4rem;
+    
+    
+}
+
+
+button{
+    padding: 8px;
+    width: 20%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    background-color: rgb(92, 185, 92);
+    font-weight: 700;
+
+}
+
+.sign-up{
+    display: flex;
+    gap: 12px
+}
+
+
+footer{
+    background-color: black;
+    color: #fff;
+    font-size: 1.4rem;
+    padding: 20px;
+   display: flex;
+   justify-content: center;
+  
+    
+}
+
+.fa {
+    padding: 15px 2px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin-right: 20px;
+    color: #fff;
+  }
+  
+  
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  
+  
+  
+  .fa-facebook {
+    background: #3B5998;
+  }
+  
+ 
+  .fa-twitter {
+    background: #55ACEE;
+    
+  }
+
+  .fa-linkedin{
+    background-color: rgb(85, 85, 205);
+  }
+
+</style>
+
+
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="logo.jpeg" alt="logo">
+            <h2>FLEXY Streaming</h2>
+            <!-- <h2>LOGO <span> PERPCY</span></h2> -->
+            
+        </div>
+
+        <div class="links">
+            <a href="#movies">VIDEOS</a>
+            <a href="#about">ABOUT US</a>
+            <a href="#sign-up">SIGN-UP</a>
+            <a href="#contact">CONTACT US</a>
+        </div>
+    </nav>
+    <main>
+        <h3 id="movies">Available Videos</h3>
+        <div class="images">
+            <div class="image1">
+                <iframe width="320" height="345" src="https://www.youtube.com/embed/HIj8wU_rGIU">
+                </iframe>
+            </div>
+            <div class="image2">
+                <iframe width="320" height="345" src="https://www.youtube.com/embed/s9iPo9YMU70">
+                </iframe>
+            </div>
+            <div class="image3">
+                <iframe width="320" height="345" src="https://www.youtube.com/embed/Tck7MFXRQZg">
+                </iframe>
+            </div>
+            <div class="image4">
+                <iframe width="320" height="345" src="https://www.youtube.com/embed/CX0V_hspEZU">
+                </iframe>
+            </div>
+            
+        </div>
+        
+            <div class="about">
+                <h3 id="about">WHO WE ARE ...</h3>
+                <p >
+                    Flexy is an oline streaming company developed by Perp Asogwa.We stream unlimited movies,
+                    TV shows & series , comedies shows, and more.
+                    
+                    <h4>MISION AND VISION</h4>
+                    <ul>
+                        <div class="mission1">
+                            <li>To be our customers favourit online streaming platform</li>
+                        </div>
+
+                        <div class="mission2">
+                            <li>To offer our customers high quality videos</li>
+                        </div>
+
+                        <div class="mission3">
+                            <li>To be the first point of call to see trending videos</li>
+                        </div>
+
+                        <div class="mission4">
+                            <li>To be a household name for all age groups</li>
+                        </div>
+                    </ul>
+            </div>
+                <form action="" id="sign-up">
+                    <label for="first-name">First Name:</label>
+                    <input type="text" name="first-name" id="first-name">
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" name="last-name" id="last-name">
+
+                    <label for="occupation">Occupation:</label>
+                    <select name="occupation" id="occupation">
+                        <option value="civil servant">civil servant</option>
+                        <option value="banker">Banker</option>
+                        <option value="hair dresser">hair dresser</option>
+                    </select>
+                    <fieldset>
+                        <legend>Select Gender</legend>
+        
+                    <input type="radio" name="gender" id="male">
+                    <label for="male">Male</label><br>
+
+                    <input type="radio" name="gender" id="female">
+                    <label for="female">Female</label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Choose Preferred Movies</legend>
+                        <input type="checkbox" name="science" id="science">
+                        <label for="science">Science Fiction</label><br>
+
+                        <input type="checkbox" name="epic" id="epic">
+                        <label for="epic">Epic Movies</label><br>
+
+                        <input type="checkbox" name="romantic" id="romantic">
+                        <label for="romantic">Romantic Movies</label><br>
+
+                        <input type="checkbox" name="horror" id="horror">
+                        <label for="science">Horror Movies</label>
+                    </fieldset>
+                    </fieldset>
+                    <div class="sign-up">
+                        <button type="submit">Sign Up</button>
+                        <p>Already have an account? <a href="www.google.com">Log in</a></p>
+                    </div>
+                </form>
+    </main>
+
+            <footer id="contact">
+                <address>
+                    Contact Us: 
+                    <a href="https://web.facebook.com/login/?_rdc=1&_rdr" class="fa fa-facebook"></a>
+                    <a href="www.twitter.com" class="fa fa-twitter"></a>
+                    <a href="www.linkedin.com" class="fa fa-linkedin"></a>
+                </address>
+            </footer>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+    ul li {
+        cursor: pointer;
+        position: relative;
+        padding: 12px 8px 12px 40px;
+        background: rgb(245, 186, 186);
+        front-size: 18px;
+        transition: 2s;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    ul li:nth-child(even) {
+        background: rgb(187, 187, 241);
+    }
+    ul li.checked {
+        background: #899;
+        color: #fff;
+        text-decoration: line-through;
+    }
+    ul li.checked::before {
+        content: '';
+        position: absolute;
+        border-color: #fff;
+        border-style: solid;
+        border-width: 0 2px 2px 0;
+        top: 10px;
+        left:16px;
+        transform:rotate3d(45deg);
+        height: 15px;
+        width: 7px;
+    }
+    .close {
+        position:absolute;
+        right: 0;
+        top: 0;
+        padding: 12px 16px 12px 16px;
+    }
+    .close:hover {
+        background-color: #f44336;
+        color: white;
+    }
+    .header {
+        background-color: #f44336;
+        padding: 30px 40px;
+        color: white;
+        text-align: center;
+    }
+    .haeder:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    input {
+        margin: 0;
+        border: none;
+        border-radius: 0;
+        width: 75%;
+        padding: 10px;
+        float: left;
+        font-size: 16px;
+    }
+    .addBtn {
+        padding: 10px;
+        width: 25%;
+        background: #fc0606;
+        color: white;
+        float: left;
+        text-align: center;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+        border-radius: 0;
+    }
+    .addBtn:hover {
+        background-color:rgb(17, 17, 17)
+    }
+    .close-button {
+        background-color: red;
+        height: 36px;
+        width: 56px;
+        color: white;
+        border: none;
+        border-radius: 2px;
+        cursor: pointer;
+    }
+</style>
+<div id="myDIV" class="header">
+    <h2>My To Do List</h2>
+    <input type="text" id="myInput"
+placeholder="Title...">
+    <span
+class="addBtn">Add</span>
+</div>
+
+
+
+<ul id="myUL">
+    <li>Morning Devotion</li>
+    <li>Make Breakfast</li>
+    <li class="checked">Go to the office</li>
+    <li>Customer Engagement Session</li>
+    <li>Follow up calls</li>
+    <li>Social media Page Interactions</li>
+    <li>Hang out with Friends</li>
+</ul>
+
+</div>
+<br>
+<br>
+<br>
+<div>
+    <button class="close-button">close</button>
+</div>
